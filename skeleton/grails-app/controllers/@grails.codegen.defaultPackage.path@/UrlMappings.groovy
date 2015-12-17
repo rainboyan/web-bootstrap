@@ -1,3 +1,5 @@
+package @grails.codegen.defaultPackage@
+
 class UrlMappings {
 
     static mappings = {
