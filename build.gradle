@@ -1,3 +1,34 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url "https://repo.grails.org/grails/core" }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+    }
+}
+
+apply plugin: "idea"
+apply plugin: "org.grails.grails-profile"
+apply plugin: "org.grails.grails-profile-publish"
+
+group 'org.grails.profiles'
+version '3.2.0.BUILD-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    maven { url "https://repo.grails.org/grails/core" }
+}
+
+grailsPublish {
+	userOrg = 'grails'  
+	githubSlug = 'grails-profiles/web'
+	license = 'Apache-2.0'
+	title = "Grails Web Profile"
+	desc = "A profile for Web applications"
+	developers = [graemerocher:'Graeme Rocher']
+}    
+
 dependencies {
-	runtime project(":base")
+    runtime "org.grails.profiles:base:3.2.0.BUILD-SNAPSHOT"
 }
