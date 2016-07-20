@@ -1,7 +1,7 @@
 description: Profile for Web applications
 features:
     defaults: 
-        - hibernate
+        - hibernate5
         - asset-pipeline
 build:
     plugins:
