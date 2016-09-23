@@ -24,5 +24,7 @@ dependencies:
     testRuntime:
         - 'org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1'
         - 'net.sourceforge.htmlunit:htmlunit:2.18'
+    provided:
+        - "org.codehaus.groovy:groovy-ant"
 
 
