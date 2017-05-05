@@ -1,7 +1,8 @@
 description: Profile for Web applications
 features:
     defaults: 
-        - hibernate5        
+        - hibernate5   
+        - events     
     required:
         - gsp
         - asset-pipeline
