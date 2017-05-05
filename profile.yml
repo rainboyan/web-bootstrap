@@ -1,13 +1,14 @@
 description: Profile for Web applications
 features:
     defaults: 
-        - hibernate5
+        - hibernate5        
+    required:
+        - gsp
         - asset-pipeline
 build:
     plugins:
         - war
         - org.grails.grails-web
-        - org.grails.grails-gsp
     excludes:
         - org.grails.grails-core
 dependencies:
@@ -23,7 +24,6 @@ dependencies:
         - "org.grails:grails-plugin-interceptors"
         - "org.grails.plugins:cache"
         - "org.grails.plugins:async"
-        - "org.grails.plugins:gsp"
         - "org.grails.plugins:scaffolding"      
     testCompile:
         - "org.grails:grails-plugin-testing"    
