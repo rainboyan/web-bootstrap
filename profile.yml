@@ -17,6 +17,7 @@ dependencies:
         - "org.springframework.boot:spring-boot-starter-actuator"
         - "org.springframework.boot:spring-boot-starter-tomcat"        
         - "org.grails:grails-web-boot"
+        - "org.grails:grails-logging"
         - "org.grails:grails-plugin-rest"
         - "org.grails:grails-plugin-databinding"
         - "org.grails:grails-plugin-i18n"
