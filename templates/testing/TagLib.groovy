@@ -1,12 +1,8 @@
 @artifact.package@
-import grails.test.mixin.TestFor
+import grails.testing.web.taglib.TagLibUnitTest
 import spock.lang.Specification
 
-/**
- * See the API for {@link grails.test.mixin.web.GroovyPageUnitTestMixin} for usage instructions
- */
-@TestFor(@artifact.name@TagLib)
-class @artifact.name@TagLibSpec extends Specification {
+class @artifact.name@TagLibSpec extends Specification implements TagLibUnitTest<@artifact.name@TagLib>{
 
     def setup() {
     }
