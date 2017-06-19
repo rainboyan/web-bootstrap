@@ -1,5 +1,4 @@
 @artifact.package@
-
 import grails.testing.web.taglib.TagLibUnitTest
 import spock.lang.Specification
 

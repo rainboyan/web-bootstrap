@@ -1,5 +1,4 @@
 @artifact.package@
-
 import grails.testing.web.interceptor.InterceptorUnitTest
 import spock.lang.Specification
 
