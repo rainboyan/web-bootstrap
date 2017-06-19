@@ -27,8 +27,7 @@ dependencies:
         - "org.grails.plugins:cache"
         - "org.grails.plugins:async"
         - "org.grails.plugins:scaffolding"      
-    testCompile:
-        - "org.grails:grails-plugin-testing"    
+    testCompile:  
         - "org.grails.plugins:geb"
         - "org.grails:grails-web-testing-support"
     testRuntime:
