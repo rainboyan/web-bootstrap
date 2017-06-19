@@ -1,6 +1,6 @@
 @artifact.package@
 
-import grails.test.mixin.integration.Integration
+import grails.testing.mixin.integration.Integration
 import grails.transaction.*
 import spock.lang.*
 
