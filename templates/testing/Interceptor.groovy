@@ -1,13 +1,9 @@
 @artifact.package@
 
-import grails.test.mixin.TestFor
+import grails.testing.web.interceptor.InterceptorUnitTest
 import spock.lang.Specification
 
-/**
- * See the API for {@link grails.test.mixin.web.ControllerUnitTestMixin} for usage instructions
- */
-@TestFor(@artifact.name@Interceptor)
-class @artifact.name@InterceptorSpec extends Specification {
+class @artifact.name@InterceptorSpec extends Specification implements InterceptorUnitTest<@artifact.name@Interceptor> {
 
     def setup() {
     }
