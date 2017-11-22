@@ -31,5 +31,5 @@ grailsPublish {
 }    
 
 dependencies {
-    runtime "org.grails.profiles:base:3.3.0"
+    runtime "org.grails.profiles:base:3.3.1"
 }

@@ -3,6 +3,7 @@ features:
     defaults: 
         - hibernate5   
         - events     
+        - geb
     required:
         - gsp
         - asset-pipeline
@@ -28,10 +29,6 @@ dependencies:
         - "org.grails.plugins:async"
         - "org.grails.plugins:scaffolding"      
     testCompile:  
-        - "org.grails.plugins:geb"
-        - "org.grails:grails-web-testing-support"
-    testRuntime:
-        - 'org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1'
-        - 'net.sourceforge.htmlunit:htmlunit:2.18'
+        - "org.grails:grails-web-testing-support"    
 
 
