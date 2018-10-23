@@ -83,21 +83,6 @@ img {
     border: none;
 }
 
-
-.footer {
-    background: #424649;
-    color: #ffffff;
-    clear: both;
-    font-size: 0.8em;
-    margin-top: 1.5em;
-    padding: 2em 1em 4em;
-    min-height: 1em;
-}
-
-.footer a {
-    color: #feb672;
-}
-
 .footer img {
     height: 80px;
     margin-right: 25px;
@@ -111,6 +96,20 @@ img {
     font-size: 1.1rem;
 }
 
+.footer {
+    background: #424649;
+    color: #ffffff;
+    clear: both;
+    font-size: 1em;
+    margin-top: 1.5em;
+    padding: 1em;
+    padding-bottom: 2em;
+    min-height: 1em;
+}
+
+.footer a {
+    color: #feb672;
+}
 
 .spinner {
     background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
