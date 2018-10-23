@@ -52,7 +52,7 @@
 
     <div class="col-md-4">
         <a href="https://grails-slack.cfapps.io" target="_blank">
-            <asset:image src="slack.svg" alt="Grails Logo" class="float-left"/>
+            <asset:image src="slack.svg" alt="Grails Slack" class="float-left"/>
         </a>
         <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
         <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
