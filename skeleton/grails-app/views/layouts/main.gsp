@@ -33,7 +33,7 @@
 <g:layoutBody/>
 
 <div class="footer row" role="contentinfo">
-    <div class="col-md-4">
+    <div class="col">
         <a href="http://guides.grails.org" target="_blank">
             <asset:image src="advancedgrails.svg" alt="Grails Guides" class="float-left"/>
         </a>
@@ -41,7 +41,7 @@
         <p>Building your first Grails app? Looking to add security, or create a Single-Page-App? Check out the <a href="http://guides.grails.org" target="_blank">Grails Guides</a> for step-by-step tutorials.</p>
 
     </div>
-    <div class="col-md-4">
+    <div class="col">
         <a href="http://docs.grails.org" target="_blank">
             <asset:image src="documentation.svg" alt="Grails Documentation" class="float-left"/>
         </a>
@@ -50,7 +50,7 @@
 
     </div>
 
-    <div class="col-md-4">
+    <div class="col">
         <a href="https://grails-slack.cfapps.io" target="_blank">
             <asset:image src="slack.svg" alt="Grails Slack" class="float-left"/>
         </a>
