@@ -3,7 +3,7 @@ features:
     defaults: 
         - hibernate5   
         - events     
-        - geb
+        - geb2
     required:
         - gsp
         - asset-pipeline
