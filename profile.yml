@@ -1,8 +1,9 @@
 description: Profile for Web applications
 features:
-    defaults: 
-        - hibernate5   
-        - events     
+    defaults:
+        - hibernate5
+        - events
+        - geb
     required:
         - gsp
         - asset-pipeline
@@ -15,7 +16,7 @@ build:
 dependencies:
     compile:
         - "org.springframework.boot:spring-boot-starter-actuator"
-        - "org.springframework.boot:spring-boot-starter-tomcat"        
+        - "org.springframework.boot:spring-boot-starter-tomcat"
         - "org.grails:grails-web-boot"
         - "org.grails:grails-logging"
         - "org.grails:grails-plugin-rest"
@@ -26,7 +27,7 @@ dependencies:
         - "org.grails:grails-plugin-interceptors"
         - "org.grails.plugins:cache"
         - "org.grails.plugins:async"
-        - "org.grails.plugins:scaffolding"      
+        - "org.grails.plugins:scaffolding"
     testCompile:  
         - "org.grails.plugins:geb"
         - "org.grails:grails-web-testing-support"
