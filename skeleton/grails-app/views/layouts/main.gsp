@@ -52,13 +52,12 @@
                 <p>Ready to dig in? You can find in-depth documentation for all the features of Grails in the <a href="http://docs.grails.org" target="_blank">User Guide</a>.</p>
 
             </div>
-
             <div class="col">
-                <a href="https://grails-slack.cfapps.io" target="_blank">
+                <a href="https://slack.grails.org" target="_blank">
                     <asset:image src="slack.svg" alt="Grails Slack" class="float-left"/>
                 </a>
-                <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
-                <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
+                <strong class="centered"><a href="https://slack.grails.org" target="_blank">Join the Community</a></strong>
+                <p>Get feedback and share your experience with other Grails developers in the community <a href="https://slack.grails.org" target="_blank">Slack channel</a>.</p>
             </div>
         </div>
     </div>
