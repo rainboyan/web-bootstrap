@@ -1,4 +1,4 @@
-description: Profile for Web applications
+description: Profile for Web with Bootstrap applications
 features:
     defaults: 
         - hibernate5   

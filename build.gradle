@@ -21,12 +21,12 @@ repositories {
 }
 
 grailsPublish {
-	userOrg = 'grails'  
-	githubSlug = 'grails-profiles/web'
+	userOrg = 'rainboyan'  
+	githubSlug = 'rainboyan/web-boostrap'
 	license = 'Apache-2.0'
-	title = "Grails Web Profile"
-	desc = "A profile for Web applications"
-	developers = [graemerocher:'Graeme Rocher']
+	title = "Grails Web Bootstrap Profile"
+	desc = "A profile for Web with Bootstrap applications"
+	developers = [graemerocher:'Graeme Rocher', rainboyan:'Michael Yan']
 }    
 
 dependencies {

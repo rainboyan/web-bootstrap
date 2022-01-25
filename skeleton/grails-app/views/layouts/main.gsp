@@ -25,7 +25,54 @@
 
         <div class="collapse navbar-collapse" aria-expanded="false" style="height: 0.8px;" id="navbarContent">
             <ul class="nav navbar-nav ml-auto">
-                <g:pageProperty name="page.nav"/>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Environment: ${grails.util.Environment.current.name}</a></li>
+                        <li><a class="dropdown-item" href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
+                        <li><a class="dropdown-item" href="#">App version:
+                            <g:meta name="info.app.version"/></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Grails version:
+                            <g:meta name="info.app.grailsVersion"/></a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
+                        <li><a class="dropdown-item" href="#">JVM version: ${System.getProperty('java.version')}</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
+                        <li><a class="dropdown-item" href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
+                        <li><a class="dropdown-item" href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
+                        <li><a class="dropdown-item" href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins</a>
+                    <ul class="dropdown-menu">
+                        <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
+                            <li><a class="dropdown-item" href="#">${plugin.name} - ${plugin.version}</a></li>
+                        </g:each>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages</a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <g:each var="lang" in="${['en', 'cs', 'da', 'de', 'es', 'fr', 'it', 'ja', 'nb', 'nl', 'pl', 'pt_BR', 'pt_PT', 'ru', 'sk', 'sv', 'th', 'zh_CN']}">
+                            <g:set var="locale" value="${Locale.forLanguageTag(lang.replace('_', '-'))}"/>
+                            <li>
+                                <a class="dropdown-item" href="?lang=${lang}">
+                                    ${locale.getDisplayName(locale)} - (${lang})
+                                </a>
+                            </li>
+                        </g:each>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
