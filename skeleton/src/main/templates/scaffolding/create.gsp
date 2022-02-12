@@ -26,7 +26,7 @@
                 </div>
             </section>
             <section class="row">
-                <div id="create-${propertyName}" class="col-12 content scaffold-create" role="main">
+                <div id="create-${propertyName}" class="col-12 scaffold scaffold-create" role="main">
                     <h1><g:message code="default.create.label" args="[entityName]" /></h1>
                     <g:if test="\${flash.message}">
                     <div class="alert alert-success" role="status">\${flash.message}</div>

@@ -31,7 +31,7 @@
                 </div>
             </section>
             <section class="row">
-                <div id="show-${propertyName}" class="col-12 content scaffold-show" role="main">
+                <div id="show-${propertyName}" class="col-12 scaffold scaffold-show" role="main">
                     <h1><g:message code="default.show.label" args="[entityName]" /></h1>
                     <g:if test="\${flash.message}">
                     <div class="alert alert-success" role="status">\${flash.message}</div>

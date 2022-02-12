@@ -15,14 +15,14 @@ img {
 
 /* GENERAL */
 
-#content .content h1 {
+#content .scaffold h1 {
     border-bottom: 1px solid #CCCCCC;
     padding: 0.5rem 0;
     text-align: left;
     font-size: 1.375em;
 }
 
-#content .content.scaffold-list h1 {
+#content .scaffold.scaffold-list h1 {
     border: none;
 }
 
