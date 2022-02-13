@@ -11,6 +11,8 @@
 
     <asset:stylesheet src="application.css"/>
 
+    <link id="bootswatch-style" rel="stylesheet" href=""/>
+
     <g:set var="layoutName" value="main"/>
 
     <g:layoutHead/>
@@ -18,7 +20,7 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top" role="navigation">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><asset:image src="grails.svg" alt="Grails Logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,6 +90,12 @@
                                 </g:link>
                             </li>
                         </g:each>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
+                    <ul id="bootswatch-themes" class="dropdown-menu dropdown-menu-right">
+                        <li><a class="dropdown-item" href="#" onclick="changeTheme('default', '');return false;">Default</a></li>
                     </ul>
                 </li>
             </ul>
