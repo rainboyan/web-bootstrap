@@ -1,4 +1,7 @@
-description: Profile for Web applications
+description: Profile for Web with Bootstrap applications
+skeleton:
+    executable: ["**/gradlew*", "**/grailsw*"]
+    binaryExtensions: ['png', 'gif', 'jpg', 'jpeg', 'ico', 'icns', 'pdf', 'zip', 'jar', 'class', 'woff', 'woff2']
 features:
     defaults: 
         - hibernate5   
