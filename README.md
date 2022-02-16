@@ -36,7 +36,7 @@ grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org
 * Support Bootstrap Icons
 * Add Bootstrap taglib, support paginate and datePicker with more options
 * Add messages_zh_CN.properties and messages_zh_TW.properties
-* Default main layout support load javascript by conversation
+* Default main layout support load javascript by convention
 * Add Languages menu
 * Add Management menu
 
@@ -45,6 +45,8 @@ grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org
 - [Grails](https://grails.org)
 - [Grails Github](https://github.com/grails)
 - [Grails Fiedls Plugin](https://grails-fields-plugin.github.io/grails-fields/)
+- [Grails Web Bootstrap Profile](https://github.com/rainboyan/web-bootstrap)
+- [Grails Web Bootstrap Demo](https://github.com/rainboyan/scaffold-bootstrap-layout-demo)
 - [Bootstrap](https://getbootstrap.com)
 - [Bootswatch](https://bootswatch.com)
 - [jQuery](https://jquery.com)
