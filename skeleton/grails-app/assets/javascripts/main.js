@@ -3,11 +3,15 @@ function changeTheme(name, css) {
 }
 
 $(function() {
-    $.getJSON('https://bootswatch.com/api/4.json', function(data) {
-        var items = [];
-        $.each(data.themes, function(index, theme) {
-            items.push( "<li>" + "<a id='" + theme.name + "' class='dropdown-item' href='#' onclick=\"changeTheme('" + theme.name + "', '" + theme.cssMin + "');return false;\">" + theme.name + "</a>" + "</li>" );
+    $("#bootswatch-navlink").on("click", function() {
+        $.getJSON('https://bootswatch.com/api/4.json', function(data) {
+            var items = [];
+            items.push("<li><a class=\"dropdown-item\" href=\"#\" onclick=\"changeTheme('default', '');return false;\">Default</a></li>");
+            $.each(data.themes, function(index, theme) {
+                items.push( "<li>" + "<a id='" + theme.name + "' class='dropdown-item' href='#' onclick=\"changeTheme('" + theme.name + "', '" + theme.cssCdn + "');return false;\">" + theme.name + "</a>" + "</li>" );
+            });
+            $("#bootswatch-themes").empty();
+            $("#bootswatch-themes").append(items);
         });
-        $("#bootswatch-themes").append(items);
     });
 });

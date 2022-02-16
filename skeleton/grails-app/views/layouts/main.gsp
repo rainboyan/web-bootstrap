@@ -81,7 +81,7 @@
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages</a>
                     <ul class="dropdown-menu dropdown-menu-right">
-                        <g:each var="lang" in="${['en', 'cs', 'da', 'de', 'es', 'fr', 'it', 'ja', 'nb', 'nl', 'pl', 'pt_BR', 'pt_PT', 'ru', 'sk', 'sv', 'th', 'zh_CN']}">
+                        <g:each var="lang" in="${['en', 'cs', 'da', 'de', 'es', 'fr', 'it', 'ja', 'nb', 'nl', 'pl', 'pt_BR', 'pt_PT', 'ru', 'sk', 'sv', 'th', 'zh_CN', 'zh_TW']}">
                             <g:set var="locale" value="${Locale.forLanguageTag(lang.replace('_', '-'))}"/>
                             <g:set var="params" value="${params + [lang:lang]}"/>
                             <li>
@@ -93,7 +93,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
+                    <a id="bootswatch-navlink" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
                     <ul id="bootswatch-themes" class="dropdown-menu dropdown-menu-right">
                         <li><a class="dropdown-item" href="#" onclick="changeTheme('default', '');return false;">Default</a></li>
                     </ul>
