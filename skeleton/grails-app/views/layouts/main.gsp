@@ -83,9 +83,9 @@
                     <ul class="dropdown-menu dropdown-menu-right">
                         <g:each var="lang" in="${['en', 'cs', 'da', 'de', 'es', 'fr', 'it', 'ja', 'nb', 'nl', 'pl', 'pt_BR', 'pt_PT', 'ru', 'sk', 'sv', 'th', 'zh_CN', 'zh_TW']}">
                             <g:set var="locale" value="${Locale.forLanguageTag(lang.replace('_', '-'))}"/>
-                            <g:set var="params" value="${params + [lang:lang]}"/>
+                            <g:set var="paramsWithLang" value="${params + [lang:lang]}"/>
                             <li>
-                                <g:link class="dropdown-item" action="${actionName}" params="${params}">
+                                <g:link class="dropdown-item" action="${actionName}" params="${paramsWithLang}">
                                     ${locale.getDisplayName(locale)} - (${lang})
                                 </g:link>
                             </li>
