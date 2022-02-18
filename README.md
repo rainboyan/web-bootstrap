@@ -14,7 +14,7 @@ A profile for creating standard Grails web applications, with popular CSS framew
 ### Build
 
 ```
-git clone web-bootstrap
+git clone https://github.com/rainboyan/web-bootstrap.git
 cd web-bootstrap
 ./gradlew publishToMavenLocal
 ```
@@ -23,6 +23,7 @@ cd web-bootstrap
 
 ```
 grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org.grails.demo.web-bootstrap-demo
+grails run-app
 ```
 
 ## What's New
@@ -33,12 +34,16 @@ grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org
 * Update jQuery 3.5.1, Bootstrap 4.6.1
 * Update Grails Scaffolding and Fields default templates
 * Support Bootstrap form component, powerful grid system and responsive layout
-* Support Bootstrap Icons
+* Support Bootstrap Icons v1.7
+* Support Bootswatch themes
 * Add Bootstrap taglib, support paginate and datePicker with more options
 * Add messages_zh_CN.properties and messages_zh_TW.properties
 * Default main layout support load javascript by convention
 * Add Languages menu
 * Add Management menu
+* Add Themes menu
+* Remove unsed css in main.css and grails.css
+* Remove unsed skin images
 
 ## Links
 
