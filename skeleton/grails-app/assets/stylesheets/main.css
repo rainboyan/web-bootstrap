@@ -387,39 +387,6 @@ input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
     box-shadow: 0 0 0.5em #ffaaaa;
 }
 
-/* PAGINATION */
-
-.pagination {
-    border-top: 0;
-    margin: 0.8em 1em 0.3em;
-    padding: 0.3em 0.2em;
-    text-align: center;
-    -moz-box-shadow: 0 0 3px 1px #AAAAAA;
-    -webkit-box-shadow: 0 0 3px 1px #AAAAAA;
-    box-shadow: 0 0 3px 1px #AAAAAA;
-    background-color: #EFEFEF;
-}
-
-.pagination a,
-.pagination .currentStep {
-    color: #666666;
-    display: inline-block;
-    margin: 0 0.1em;
-    padding: 0.25em 0.7em;
-    text-decoration: none;
-    -moz-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    border-radius: 0.3em;
-}
-
-.pagination a:hover, .pagination a:focus,
-.pagination .currentStep {
-    background-color: #999999;
-    color: #ffffff;
-    outline: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-}
-
 /* ACTION BUTTONS */
 
 .buttons {
