@@ -11,7 +11,7 @@ A profile for creating standard Grails web applications, with popular CSS framew
 
 ## Usage
 
-### Build
+### Build Profile
 
 ```
 git clone https://github.com/rainboyan/web-bootstrap.git
@@ -21,20 +21,33 @@ cd web-bootstrap
 
 ### Create App
 
+#### Use Bootstrap CSS
+
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org.grails.demo.web-bootstrap-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features jquery,popper,bootstrap org.grails.demo.web-bootstrap-demo
+cd web-bootstrap-demo
+grails run-app
+```
+#### Use Bootstrap with SASS and NPM
+
+```
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+cd web-bootstrap-sass-demo
+npm install
+npm run build
 grails run-app
 ```
 
 ## What's New
 
-### 5.0.0
+### 5.0.0-SNAPSHOT
 
 * Update Grails 5.0
-* Update jQuery 3.5.1, Bootstrap 4.6.1
+* Update jQuery 3.6.0, Bootstrap 4.6.1
 * Update Grails Scaffolding and Fields default templates
 * Support Bootstrap form component, powerful grid system and responsive layout
-* Support Bootstrap Icons v1.7
+* Support Bootstrap Icons v1.8
+* Support Bootstrap with SASS and NPM
 * Support Bootswatch themes
 * Add Bootstrap taglib, support paginate and datePicker with more options
 * Add messages_zh_CN.properties and messages_zh_TW.properties
@@ -53,6 +66,7 @@ grails run-app
 - [Grails Web Bootstrap Profile](https://github.com/rainboyan/web-bootstrap)
 - [Grails Web Bootstrap Demo](https://github.com/rainboyan/scaffold-bootstrap-layout-demo)
 - [Bootstrap](https://getbootstrap.com)
+- [Bootstrap npm starter](https://github.com/twbs/bootstrap-npm-starter)
 - [Bootswatch](https://bootswatch.com)
 - [jQuery](https://jquery.com)
 - [Popper](https://popper.js.org)
