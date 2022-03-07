@@ -7,9 +7,6 @@ features:
         - hibernate5
         - events
         - geb2
-        - bootstrap
-        - jquery
-        - popper
     required:
         - gsp
         - asset-pipeline
