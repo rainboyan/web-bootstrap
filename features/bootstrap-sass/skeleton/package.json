@@ -28,7 +28,7 @@
     "copy-bootstrap-icon": "cp -R node_modules/bootstrap-icons/font/fonts/ grails-app/assets/fonts",
     "copy-bootstrap": "cp node_modules/bootstrap/dist/js/bootstrap* grails-app/assets/javascripts/",
     "copy-bs-custom-file-input": "cp node_modules/bs-custom-file-input/dist/bs-custom-file-input* grails-app/assets/javascripts/",
-    "postinstall": "npm-run-all copy-jquery copy-popper copy-bootstrap-icon copy-bootstrap copy-bs-custom-file-input"
+    "postinstall": "npm-run-all copy-bootstrap-icon copy-bootstrap copy-bs-custom-file-input"
   },
   "keywords": [
     "bootstrap",
