@@ -5,7 +5,7 @@ A profile for creating standard Grails web applications, with popular CSS framew
 ## Grails Version
 
 - Grails **5.0.0**
-- Grails Base Profile **5.0.3**
+- Grails Base Profile **5.0.6**
 - Grails Scaffolding Plugin **4.0.0**
 - Grails Fields Plugin **3.0.0.RC1**
 
@@ -31,7 +31,7 @@ grails run-app
 #### Use Bootstrap with SASS and NPM
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features jquery,popper,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
