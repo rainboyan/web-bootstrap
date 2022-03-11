@@ -9,8 +9,5 @@
 *
 *= require bootstrap
 *= require bootstrap-icons
-*= require grails
-*= require main
-*= require mobile
 *= require_self
 */

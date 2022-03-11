@@ -13,6 +13,10 @@
 
     <link id="bootswatch-style" rel="stylesheet" href=""/>
 
+    <asset:stylesheet src="main.css"/>
+    <asset:stylesheet src="grails.css"/>
+    <asset:stylesheet src="mobile.css"/>
+
     <g:set var="layoutName" value="main"/>
 
     <g:layoutHead/>
