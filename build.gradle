@@ -22,12 +22,12 @@ repositories {
 
 grailsPublish {
 	userOrg = 'rainboyan'  
-	githubSlug = 'rainboyan/web-boostrap'
+	githubSlug = 'rainboyan/web-modern'
 	license = 'Apache-2.0'
-	title = "Grails Web Bootstrap Profile"
-	desc = "A profile for Web with Bootstrap applications"
-	developers = [graemerocher:'Graeme Rocher', rainboyan:'Michael Yan']
-}    
+	title = "Grails Web Modern Profile"
+	desc = "A profile for Web Modern applications"
+	developers = [rainboyan:'Michael Yan']
+}
 
 dependencies {
     runtime "org.grails.profiles:base:$baseVersion"
