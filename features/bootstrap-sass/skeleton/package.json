@@ -15,7 +15,7 @@
   "homepage": "https://github.com/rainboyan/web-bootstrap#readme",
   "scripts": {
     "build": "npm run css",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 grails-app/assets/scss -o grails-app/assets/stylesheets/",
+    "css-compile": "./node_modules/.bin/sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules grails-app/assets/scss/:grails-app/assets/stylesheets/",
     "css-lint": "stylelint grails-app/assets/scss/",
     "css-prefix": "postcss --replace grails-app/assets/stylesheets/bootstrap.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix",
@@ -39,20 +39,20 @@
     "template"
   ],
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-icons": "^1.7.0",
+    "@popperjs/core": "^2.11.4",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
     "bs-custom-file-input": "^1.3.4",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "node-sass": "^6.0.0",
-    "nodemon": "^2.0.7",
+    "autoprefixer": "^10.4.2",
+    "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.10",
-    "postcss-cli": "^8.3.1",
-    "stylelint": "^13.12.0",
-    "stylelint-config-twbs-bootstrap": "^2.1.0"
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.9",
+    "stylelint": "^14.2.0",
+    "stylelint-config-twbs-bootstrap": "^3.0.1"
   }
 }
