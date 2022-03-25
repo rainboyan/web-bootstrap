@@ -4,8 +4,8 @@ A profile for creating standard Grails web applications, with popular CSS framew
 
 ## Grails Version
 
-- Grails **4.0.13**
-- Grails Base Profile **4.0.4**
+- Grails **5.0.0**
+- Grails Base Profile **5.0.6**
 - Grails Scaffolding Plugin **4.0.0**
 - Grails Fields Plugin **3.0.0.RC1**
 
@@ -24,14 +24,14 @@ cd web-bootstrap
 #### Use Bootstrap CSS
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:4.0.0 --features bootstrap org.grails.demo.web-bootstrap-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features bootstrap org.grails.demo.web-bootstrap-demo
 cd web-bootstrap-demo
 grails run-app
 ```
 #### Use Bootstrap with SASS and NPM
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:4.0.0 --features bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
@@ -42,8 +42,8 @@ grails run-app
 
 ### 4.0.0
 
-* Update Grails 4.0
-* Update jQuery 3.6.0, Bootstrap 4.6.1
+* Update Grails 5.0
+* Update jQuery 3.6.0, Bootstrap 5.1.3
 * Update Grails Scaffolding and Fields default templates
 * Support Bootstrap form component, powerful grid system and responsive layout
 * Support Bootstrap Icons v1.8

@@ -63,9 +63,6 @@ img {
 }
 
 .spinner {
-    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
-    height: 16px;
-    width: 16px;
     padding: 0.5em;
     position: absolute;
     right: 0;
@@ -131,7 +128,7 @@ a.navbar-brand {
     padding-bottom: 25px;
 }
 
-.navbar .navbar-nav li {
+.navbar .navbar-nav li.nav-item {
     margin-right: 0.5em;
 }
 
@@ -308,8 +305,6 @@ fieldset.embedded {
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
 }
 
@@ -321,42 +316,24 @@ fieldset.embedded legend {
 
 .errors,
 .message {
-    margin: 1em 0;
-    padding: 0.5em;
+    margin: 0;
+    padding: 0;
 }
 
 .message {
     background: #f3f3ff;
     border: 1px solid #b2d1ff;
     color: #006dba;
-    -moz-box-shadow: 0 0 0.25em #b2d1ff;
-    -webkit-box-shadow: 0 0 0.25em #b2d1ff;
     box-shadow: 0 0 0.25em #b2d1ff;
-}
-
-.errors {
-    background: #fff3f3;
-    border: 1px solid #ffaaaa;
-    color: #cc0000;
-    -moz-box-shadow: 0 0 0.25em #ff8888;
-    -webkit-box-shadow: 0 0 0.25em #ff8888;
-    box-shadow: 0 0 0.25em #ff8888;
-}
-
-.errors ul,
-.message {
-    padding: 0;
 }
 
 .errors li {
     list-style: none;
-    background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
-    text-indent: 2.2em;
+    text-indent: .5em;
 }
 
 .message {
-    background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
-    text-indent: 2.2em;
+    text-indent: .5em;
 }
 
 /* form fields with errors */
@@ -368,8 +345,6 @@ fieldset.embedded legend {
 }
 
 .error input:focus, .error select:focus, .error textarea:focus {
-    -moz-box-shadow: 0 0 0.5em #ffaaaa;
-    -webkit-box-shadow: 0 0 0.5em #ffaaaa;
     box-shadow: 0 0 0.5em #ffaaaa;
 }
 
@@ -380,8 +355,6 @@ input:invalid, select:invalid, textarea:invalid {
 }
 
 input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
-    -moz-box-shadow: 0 0 0.5em #ffaaaa;
-    -webkit-box-shadow: 0 0 0.5em #ffaaaa;
     box-shadow: 0 0 0.5em #ffaaaa;
 }
 
