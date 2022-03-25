@@ -24,18 +24,18 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><asset:image src="grails.svg" alt="Grails Logo"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" aria-expanded="false" id="navbarContent">
-            <ul class="navbar-nav ml-auto navbar-nav-scroll" style="max-height: 100px;">
+            <ul class="navbar-nav ml-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <g:if env="development">
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Environment: ${grails.util.Environment.current.name}</a></li>
                         <li><a class="dropdown-item" href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
@@ -53,7 +53,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
                         <li><a class="dropdown-item" href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
@@ -62,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins</a>
                     <ul class="dropdown-menu">
                         <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
                             <li><a class="dropdown-item" href="#">${plugin.name} - ${plugin.version}</a></li>
@@ -71,7 +71,7 @@
                 </li>
                 </g:if>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Management</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Management</a>
                     <ul class="dropdown-menu">
                         <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.name } }">
                             <li class="controller">
@@ -83,8 +83,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages</a>
-                    <ul class="dropdown-menu dropdown-menu-right">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <g:each var="lang" in="${['en', 'cs', 'da', 'de', 'es', 'fr', 'it', 'ja', 'nb', 'nl', 'pl', 'pt_BR', 'pt_PT', 'ru', 'sk', 'sv', 'th', 'zh_CN', 'zh_TW']}">
                             <g:set var="locale" value="${Locale.forLanguageTag(lang.replace('_', '-'))}"/>
                             <g:set var="paramsWithLang" value="${params + [lang:lang]}"/>
@@ -97,8 +97,8 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a id="bootswatch-navlink" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
-                    <ul id="bootswatch-themes" class="dropdown-menu dropdown-menu-right">
+                    <a id="bootswatch-navlink" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Themes</a>
+                    <ul id="bootswatch-themes" class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#" onclick="changeTheme('default', '');return false;">Default</a></li>
                     </ul>
                 </li>

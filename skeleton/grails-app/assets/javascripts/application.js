@@ -5,9 +5,8 @@
 // You're free to add application-wide JavaScript to this file, but it's generally better
 // to create separate JavaScript files as needed.
 //
-//= require jquery.min
-//= require popper.min
-//= require bootstrap
+// require jquery.min
+//= require bootstrap.bundle
 //= require bs-custom-file-input.min
 //= require_self
 

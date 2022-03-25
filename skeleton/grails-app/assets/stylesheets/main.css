@@ -60,6 +60,12 @@ img {
 
 .footer a {
     color: #feb672;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #feb672;
+    text-decoration: underline;
 }
 
 .spinner {
@@ -129,7 +135,7 @@ a.navbar-brand {
 }
 
 .navbar .navbar-nav li.nav-item {
-    margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 .navbar .dropdown-divider {
@@ -165,7 +171,7 @@ a.navbar-brand {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 
-.navbar li.dropdown.show ul.dropdown-menu {
+.navbar li.dropdown ul.dropdown-menu.show {
     background-color: #424649;
 }
 
