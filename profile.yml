@@ -25,19 +25,31 @@ build:
     excludes:
         - org.grails.grails-core
 dependencies:
-    compile:
-        - "org.springframework.boot:spring-boot-starter-actuator"
-        - "org.springframework.boot:spring-boot-starter-tomcat"
-        - "org.grails:grails-web-boot"
-        - "org.grails:grails-logging"
-        - "org.grails:grails-plugin-rest"
-        - "org.grails:grails-plugin-databinding"
-        - "org.grails:grails-plugin-i18n"
-        - "org.grails:grails-plugin-services"
-        - "org.grails:grails-plugin-url-mappings"
-        - "org.grails:grails-plugin-interceptors"
-        - "org.grails.plugins:cache"
-        - "org.grails.plugins:async"
-        - "org.grails.plugins:scaffolding"
-    testCompile:
-        - "org.grails:grails-web-testing-support"
+    - scope: compile
+      coords: "org.springframework.boot:spring-boot-starter-actuator"
+    - scope: compile
+      coords: "org.springframework.boot:spring-boot-starter-tomcat"
+    - scope: compile
+      coords: "org.grails:grails-web-boot"
+    - scope: compile
+      coords: "org.grails:grails-logging"
+    - scope: compile
+      coords: "org.grails:grails-plugin-rest"
+    - scope: compile
+      coords: "org.grails:grails-plugin-databinding"
+    - scope: compile
+      coords: "org.grails:grails-plugin-i18n"
+    - scope: compile
+      coords: "org.grails:grails-plugin-services"
+    - scope: compile
+      coords: "org.grails:grails-plugin-url-mappings"
+    - scope: compile
+      coords: "org.grails:grails-plugin-interceptors"
+    - scope: compile
+      coords: "org.grails.plugins:cache"
+    - scope: compile
+      coords: "org.grails.plugins:async"
+    - scope: compile
+      coords: "org.grails.plugins:scaffolding"
+    - scope: testCompile
+      coords: "org.grails:grails-web-testing-support"
