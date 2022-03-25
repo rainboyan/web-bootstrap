@@ -34,14 +34,18 @@
                 <div id="edit-${propertyName}" class="col-12 scaffold scaffold-edit" role="main">
                     <h1><g:message code="default.edit.label" args="[entityName]" /></h1>
                     <g:if test="\${flash.message}">
-                    <div class="alert alert-success" role="status">\${flash.message}</div>
+                    <div class="alert alert-success" role="status"><i class="bi bi-info-circle"></i>\${flash.message}</div>
                     </g:if>
                     <g:hasErrors bean="\${this.${propertyName}}">
-                    <ul class="errors" role="alert">
-                        <g:eachError bean="\${this.${propertyName}}" var="error">
-                        <li <g:if test="\${error in org.springframework.validation.FieldError}">data-field-id="\${error.field}"</g:if>><g:message error="\${error}"/></li>
-                        </g:eachError>
-                    </ul>
+                    <div class="alert alert-danger" role="alert">
+                        <ul class="errors">
+                            <g:eachError bean="\${this.${propertyName}}" var="error">
+                            <li <g:if test="\${error in org.springframework.validation.FieldError}">data-field-id="\${error.field}"</g:if>>
+                                <i class="bi bi-exclamation-circle"></i><g:message error="\${error}"/>
+                            </li>
+                            </g:eachError>
+                        </ul>
+                    </div>
                     </g:hasErrors>
                     <g:form resource="\${this.${propertyName}}" method="PUT">
                         <g:hiddenField name="version" value="\${this.${propertyName}?.version}" />

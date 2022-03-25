@@ -29,7 +29,7 @@
                 <div id="list-${propertyName}" class="col-12 scaffold scaffold-list" role="main">
                     <h1><g:message code="default.list.label" args="[entityName]" /></h1>
                     <g:if test="\${flash.message}">
-                        <div class="alert alert-success" role="status">\${flash.message}</div>
+                        <div class="alert alert-success" role="status"><i class="bi bi-info-circle"></i>\${flash.message}</div>
                     </g:if>
                     <f:table collection="\${${propertyName}List}" />
 
