@@ -3,16 +3,15 @@ skeleton:
     executable: ["**/gradlew*", "**/grailsw*"]
     binaryExtensions: ['png', 'gif', 'jpg', 'jpeg', 'ico', 'icns', 'pdf', 'zip', 'jar', 'class', 'woff', 'woff2']
 features:
-    defaults: 
-        - bootstrap
-    required:
+    defaults:
         - hibernate5
         - events
         - geb2
+        - bootstrap
+    required:
         - gsp
         - asset-pipeline
         - jquery
-        - popper
         - fields
 repositories:
     - "mavenLocal()"

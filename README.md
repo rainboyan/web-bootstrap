@@ -6,7 +6,7 @@ A profile for creating standard Grails web applications, with popular CSS framew
 
 - Grails **5.0.0**
 - Grails Base Profile **5.0.6**
-- Grails Scaffolding Plugin **4.0.0**
+- Grails Scaffolding Plugin **4.1.0**
 - Grails Fields Plugin **3.0.0.RC1**
 
 ## Usage
@@ -23,15 +23,20 @@ cd web-bootstrap
 
 #### Use Bootstrap CSS
 
+Generated project with default features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `fields`, `jquery`, `bootstrap`.
+
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features bootstrap org.grails.demo.web-bootstrap-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT org.grails.demo.web-bootstrap-demo
 cd web-bootstrap-demo
 grails run-app
 ```
+
 #### Use Bootstrap with SASS and NPM
 
+Generated project with features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `fields`, `jquery`, `bootstrap-sass`.
+
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features hibernate5,events,geb2,jquery,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
@@ -40,10 +45,23 @@ grails run-app
 
 ## What's New
 
-### 4.0.0
+### 5.0.0-SNAPSHOT
 
 * Update Grails 5.0
-* Update jQuery 3.6.0, Bootstrap 5.1.3
+* Grails Base Profile 5.0.6
+* Grails Scaffolding Plugin 4.1.0
+* Update Bootstrap v5.1.3, Popper 2.10.2
+* Update Bootstrap Icons v1.8.1
+* Feature `popper` is optional now, Use `bootstrap.bundle.js` include it
+* Support Bootstrap SASS, Use [DartSass](https://sass-lang.com/dart-sass) in place of [Node Sass](https://sass-lang.com/blog/libsass-is-deprecated)
+
+### 4.0.0
+
+* Update Grails 4.0
+* Grails Base Profile 4.0.4
+* Grails Scaffolding Plugin 4.0.0.RC1
+* Grails Fields Plugin 3.0.0.RC1
+* Update jQuery 3.6.0, Bootstrap 4.6.1
 * Update Grails Scaffolding and Fields default templates
 * Support Bootstrap form component, powerful grid system and responsive layout
 * Support Bootstrap Icons v1.8
@@ -63,6 +81,7 @@ grails run-app
 - [Grails](https://grails.org)
 - [Grails Github](https://github.com/grails)
 - [Grails Fiedls Plugin](https://grails-fields-plugin.github.io/grails-fields/)
+- [Grails Web Profile](https://github.com/grails-profiles/web)
 - [Grails Web Bootstrap Profile](https://github.com/rainboyan/web-bootstrap)
 - [Grails Web Bootstrap Demo](https://github.com/rainboyan/scaffold-bootstrap-layout-demo)
 - [Bootstrap](https://getbootstrap.com)
