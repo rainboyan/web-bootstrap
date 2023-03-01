@@ -59,7 +59,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = project.group
-            artifactId = 'web-boostrap'
+            artifactId = 'web-bootstrap'
             version = project.version
 
             from components.java
