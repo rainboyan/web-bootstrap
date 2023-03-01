@@ -1,6 +1,6 @@
 {
   "name": "grails-bootstrap-sass",
-  "version": "1.0.0",
+  "version": "2022.0.0",
   "private": true,
   "description": "Grails with npm to building a Bootstrap powered web site.",
   "author": "rain",
