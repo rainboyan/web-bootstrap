@@ -1,6 +1,6 @@
-# Grails Web Profile
+# Grails Web Bootstrap Profile
 
-A profile for creating standard Grails web applications, with popular CSS framework **Bootstrap**.
+A Grails Profile for creating standard Grails web applications, with popular CSS framework **Bootstrap**.
 
 ## Grails Version
 
@@ -11,22 +11,41 @@ A profile for creating standard Grails web applications, with popular CSS framew
 
 ## Usage
 
-### Build Profile
+### Profile Repositories
 
-```
-git clone https://github.com/rainboyan/web-bootstrap.git
-cd web-bootstrap
-./gradlew publishToMavenLocal
+By default Grails will resolve profiles from the Grails central repository. However, you can override what repositories will be searched by specifying repositories in the USER_HOME/.grails/settings.groovy file.
+
+If you want profiles to be resolved with a custom repository in addition to the Grails central repository, you must specify Grails central in the file as well:
+
+```groovy
+grails {
+    profiles {
+        'web-bootstrap' {
+            groupId = "org.rainboyan.profiles"
+            version = "4.1.0"
+        }
+        repositories {
+            mavenCentral {
+                url = "https://repo1.maven.org/maven2/"
+                snapshotsEnabled = false
+            }
+            grailsCentral {
+                url = "https://repo.grails.org/grails/core"
+                napshotsEnabled = true
+            }
+        }
+    }
+}
 ```
 
-### Create App
+### Create App with Bootstrap
 
 #### Use Bootstrap CSS 
 
 Generated project with default features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `jquery`, `popper`, `fields`, `bootstrap`.
 
 ```
-grails create-app --profile org.rainboyan.profiles:web-bootstrap:4.1.0 org.grails.demo.web-bootstrap-demo
+grails create-app --profile web-bootstrap org.grails.demo.web-bootstrap-demo
 cd web-bootstrap-demo
 grails run-app
 ```
@@ -36,11 +55,21 @@ grails run-app
 Generated project with features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `jquery`, `popper`, `fields`, `bootstrap-sass`.
 
 ```
-grails create-app --profile org.rainboyan.profiles:web-bootstrap:4.1.0 --features hibernate5,events,geb2,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile web-bootstrap --features hibernate5,events,geb2,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
 grails run-app
+```
+
+## Development
+
+### Build Profile from Source
+
+```
+git clone https://github.com/rainboyan/web-bootstrap.git
+cd web-bootstrap
+./gradlew publishToMavenLocal
 ```
 
 ## What's New
@@ -71,6 +100,7 @@ grails run-app
 ## Links
 
 - [Grails](https://grails.org)
+- [Grails Application Profiles](https://docs.grails.org/4.0.0/guide/profiles.html)
 - [Grails Github](https://github.com/grails)
 - [Grails Fiedls Plugin](https://grails-fields-plugin.github.io/grails-fields/)
 - [Grails Web Bootstrap Profile](https://github.com/rainboyan/web-bootstrap)
