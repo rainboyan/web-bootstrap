@@ -4,7 +4,7 @@ A profile for creating standard Grails web applications, with popular CSS framew
 
 ## Grails Version
 
-- Grails **4.0.0**
+- Grails **4.1.0**
 - Grails Base Profile **4.0.4**
 - Grails Scaffolding Plugin **4.0.0**
 - Grails Fields Plugin **3.0.0.RC1**
@@ -26,7 +26,7 @@ cd web-bootstrap
 Generated project with default features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `jquery`, `popper`, `fields`, `bootstrap`.
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:4.0.0 org.grails.demo.web-bootstrap-demo
+grails create-app --profile org.rainboyan.profiles:web-bootstrap:4.1.0 org.grails.demo.web-bootstrap-demo
 cd web-bootstrap-demo
 grails run-app
 ```
@@ -36,7 +36,7 @@ grails run-app
 Generated project with features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `jquery`, `popper`, `fields`, `bootstrap-sass`.
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:4.0.0 --features hibernate5,events,geb2,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile org.rainboyan.profiles:web-bootstrap:4.1.0 --features hibernate5,events,geb2,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
@@ -44,6 +44,11 @@ grails run-app
 ```
 
 ## What's New
+
+### 4.1.0
+
+* Update Grails 4.1.2
+* Publish to Maven Central
 
 ### 4.0.0
 
