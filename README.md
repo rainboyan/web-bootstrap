@@ -38,9 +38,9 @@ grails {
 }
 ```
 
-### Create App with Bootstrap
+### Creating App with Bootstrap
 
-#### Use Bootstrap CSS 
+#### Using Bootstrap CSS 
 
 Generated project with default features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `jquery`, `popper`, `fields`, `bootstrap`.
 
@@ -50,7 +50,7 @@ cd web-bootstrap-demo
 grails run-app
 ```
 
-#### Use Bootstrap with SASS and NPM
+#### Using Bootstrap with SASS and NPM
 
 Generated project with features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `jquery`, `popper`, `fields`, `bootstrap-sass`.
 
@@ -61,6 +61,16 @@ npm install
 npm run build
 grails run-app
 ```
+
+### Running the App
+
+```bash
+grails run-app
+```
+
+The result will look something like this:
+
+![Grails Web Bootstrap App](screenshot.png)
 
 ## Development
 
