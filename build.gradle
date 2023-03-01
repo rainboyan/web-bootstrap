@@ -2,9 +2,10 @@ buildscript {
     repositories {
         mavenLocal()
         maven { url "https://repo.grails.org/grails/core" }
+        maven { url 'https://repo.gradle.org/gradle/libs-releases' }
     }
     dependencies {
-        classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
     }
 }
 
@@ -30,5 +31,5 @@ grailsPublish {
 }    
 
 dependencies {
-    runtime "org.grails.profiles:base:$baseVersion"
+    profile "org.grails.profiles:base:$baseVersion"
 }
