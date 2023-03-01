@@ -109,7 +109,7 @@
 
 <g:layoutBody/>
 
-<div class="footer d-print-none" role="contentinfo">
+<div class="footer" role="contentinfo">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-sm-12">
