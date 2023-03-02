@@ -31,7 +31,7 @@ grails {
             }
             grailsCentral {
                 url = "https://repo.grails.org/grails/core"
-                napshotsEnabled = true
+                snapshotsEnabled = true
             }
         }
     }
