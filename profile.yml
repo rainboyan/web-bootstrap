@@ -15,10 +15,10 @@ features:
         - popper
         - fields
 repositories:
-    - "mavenLocal()"
+    - "mavenCentral()"
 build:
     repositories:
-        - "mavenLocal()"
+        - "mavenCentral()"
     plugins:
         - war
         - org.grails.grails-web
