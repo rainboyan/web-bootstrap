@@ -86,6 +86,17 @@ publishing {
                     developerConnection = 'scm:git:ssh://github.com:rainboyan/web-bootstrap.git'
                     url = 'https://github.com/rainboyan/web-bootstrap/tree/main'
                 }
+                withXml { xml ->
+                    def root = xml.asNode()
+                    def dependencies = root.appendNode('dependencies')
+                    project.configurations.profile.dependencies.each {
+                        def dependency = dependencies.appendNode('dependency')
+                        dependency.appendNode('groupId', it.group)
+                        dependency.appendNode('artifactId', it.name)
+                        dependency.appendNode('version', it.version)
+                        dependency.appendNode('scope', 'profile')
+                    }
+                }
             }
         }
     }
