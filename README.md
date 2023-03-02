@@ -4,7 +4,7 @@ A Grails Profile for creating standard Grails web applications, with popular CSS
 
 ## Grails Version
 
-- Grails **4.1.0**
+- Grails **4.1.2**
 - Grails Base Profile **4.0.4**
 - Grails Scaffolding Plugin **4.0.0**
 - Grails Fields Plugin **3.0.0.RC1**
@@ -22,7 +22,7 @@ grails {
     profiles {
         'web-bootstrap' {
             groupId = "org.rainboyan.profiles"
-            version = "4.1.0"
+            version = "4.1.1"
         }
         repositories {
             mavenCentral {
@@ -83,6 +83,10 @@ cd web-bootstrap
 ```
 
 ## What's New
+
+### 4.1.1
+
+* Fixes error: Profile [org.grails.profiles:base:4.0.4] declares an invalid dependency on parent profile
 
 ### 4.1.0
 
