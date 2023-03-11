@@ -22,7 +22,7 @@ grails {
     profiles {
         'web-bootstrap' {
             groupId = "org.rainboyan.profiles"
-            version = "4.1.1"
+            version = "4.1.2"
         }
         repositories {
             mavenCentral {
@@ -83,6 +83,12 @@ cd web-bootstrap
 ```
 
 ## What's New
+
+### 4.1.2
+
+* Relocate `BootstrapTagLib` to new package `org.rainboyan.plugins.web.taglib`
+* Change logback default logging level to `INFO`
+* Upgrade Gradle Nexus Publish Plugin to 1.3.0
 
 ### 4.1.1
 
