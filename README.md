@@ -22,7 +22,7 @@ grails {
     profiles {
         'web-bootstrap' {
             groupId = "org.rainboyan.profiles"
-            version = "4.1.2"
+            version = "4.1.3"
         }
         repositories {
             mavenCentral {
@@ -83,6 +83,10 @@ cd web-bootstrap
 ```
 
 ## What's New
+
+### 4.1.3
+
+* Upgrade Gradle to 6.9.4
 
 ### 4.1.2
 
