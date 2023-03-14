@@ -1,4 +1,4 @@
-package org.grails.taglib
+package org.rainboyan.plugins.web.taglib
 
 import grails.config.Config
 import grails.core.support.GrailsConfigurationAware
