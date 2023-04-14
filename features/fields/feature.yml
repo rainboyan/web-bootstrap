@@ -1,1 +1,4 @@
-description: Add custom Fields templates support Bootstrap
+description: Add Fields Plugin
+dependencies:
+    - scope: compile
+      coords: 'org.grails.plugins:fields'

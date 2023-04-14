@@ -4,14 +4,12 @@ skeleton:
     binaryExtensions: ['png', 'gif', 'jpg', 'jpeg', 'ico', 'icns', 'pdf', 'zip', 'jar', 'class', 'woff', 'woff2']
 features:
     defaults:
+        - asset-pipeline
+        - jquery
+        - bootstrap
         - hibernate5
         - events
         - geb2
-        - bootstrap
-    required:
-        - gsp
-        - asset-pipeline
-        - jquery
         - fields
 repositories:
     - "mavenLocal()"
@@ -46,6 +44,8 @@ dependencies:
       coords: "org.grails:grails-plugin-datasource"
     - scope: compile
       coords: "org.grails:grails-plugin-domain-class"
+    - scope: compile
+      coords: "org.grails:grails-plugin-gsp"
     - scope: compile
       coords: "org.grails:grails-plugin-i18n"
     - scope: compile
