@@ -29,21 +29,35 @@ dependencies:
     - scope: compile
       coords: "org.springframework.boot:spring-boot-starter-tomcat"
     - scope: compile
-      coords: "org.grails:grails-web-boot"
+      coords: "org.springframework.boot:spring-boot-starter-logging"
+    - scope: compile
+      coords: "org.grails:grails-boot"
     - scope: compile
       coords: "org.grails:grails-logging"
     - scope: compile
-      coords: "org.grails:grails-plugin-rest"
+      coords: "org.grails:grails-plugin-codecs"
+    - scope: compile
+      coords: "org.grails:grails-plugin-controllers"
+    - scope: compile
+      coords: "org.grails:grails-plugin-converters"
     - scope: compile
       coords: "org.grails:grails-plugin-databinding"
     - scope: compile
+      coords: "org.grails:grails-plugin-datasource"
+    - scope: compile
+      coords: "org.grails:grails-plugin-domain-class"
+    - scope: compile
       coords: "org.grails:grails-plugin-i18n"
+    - scope: compile
+      coords: "org.grails:grails-plugin-interceptors"
+    - scope: compile
+      coords: "org.grails:grails-plugin-management"
+    - scope: compile
+      coords: "org.grails:grails-plugin-rest"
     - scope: compile
       coords: "org.grails:grails-plugin-services"
     - scope: compile
       coords: "org.grails:grails-plugin-url-mappings"
-    - scope: compile
-      coords: "org.grails:grails-plugin-interceptors"
     - scope: compile
       coords: "org.grails.plugins:cache"
     - scope: compile
@@ -51,4 +65,4 @@ dependencies:
     - scope: compile
       coords: "org.grails.plugins:scaffolding"
     - scope: testCompile
-      coords: "org.grails:grails-web-testing-support"
+      coords: "org.grails:grails-test-support"
