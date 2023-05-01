@@ -16,6 +16,7 @@ repositories:
 build:
     repositories:
         - "mavenLocal()"
+        - "https://repo.gradle.org/gradle/libs-releases"
     plugins:
         - war
         - org.grails.grails-web
