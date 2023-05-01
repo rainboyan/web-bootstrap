@@ -32,7 +32,7 @@
         </button>
 
         <div class="collapse navbar-collapse" aria-expanded="false" id="navbarContent">
-            <ul class="navbar-nav ml-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <g:if env="development">
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status</a>
