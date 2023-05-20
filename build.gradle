@@ -28,7 +28,7 @@ grailsPublish {
 	title = "Grails Web Bootstrap Profile"
 	desc = "A profile for Web with Bootstrap applications"
 	developers = [graemerocher:'Graeme Rocher', rainboyan:'Michael Yan']
-}    
+}
 
 dependencies {
     profile "org.grails.profiles:base:$baseVersion"
