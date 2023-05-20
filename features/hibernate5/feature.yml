@@ -1,0 +1,14 @@
+description: Adds GORM for Hibernate 5 to the project
+dependencies:
+    - scope: compile
+      coords: "org.grails.plugins:hibernate5"
+    - scope: compile
+      coords: "org.hibernate:hibernate-core:5.6.15.Final"
+    - scope: runtime
+      coords: "com.h2database:h2"
+    - scope: runtime
+      coords: "org.apache.tomcat:tomcat-jdbc"
+    - scope: runtime
+      coords: 'javax.xml.bind:jaxb-api:2.3.1'
+    - scope: runtime
+      coords: 'org.glassfish.web:el-impl:2.2.1-b05'
