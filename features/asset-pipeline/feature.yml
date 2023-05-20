@@ -1,0 +1,9 @@
+description: Adds Asset Pipeline to a Grails project
+build:
+    plugins:
+        - com.bertramlabs.asset-pipeline
+dependencies:
+    - scope: build
+      coords: 'com.bertramlabs.plugins:asset-pipeline-gradle:4.3.0'
+    - scope: runtime
+      coords: "com.bertramlabs.plugins:asset-pipeline-grails:4.3.0"
