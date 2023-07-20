@@ -1,3 +1,16 @@
+spring:
+    main:
+        banner-mode: "console"
+    devtools:
+        restart:
+            additional-exclude:
+                - '**/*.gsp'
+                - '**/*.gson'
+                - 'application.groovy'
+                - 'spring/resources.groovy'
+                - 'spring/resources.xml'
+                - 'messages*.properties'
+---
 grails:
     mime:
         disable:
