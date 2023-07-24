@@ -36,7 +36,7 @@ grails run-app
 Generated project with features, included `hibernate5`, `events`, `geb2`, `gsp`, `asset-pipeline`, `fields`, `jquery`, `bootstrap-sass`.
 
 ```
-grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features hibernate5,events,geb2,jquery,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
+grails create-app --profile org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT --features asset-pipeline,hibernate5,events,geb2,jquery,bootstrap-sass org.grails.demo.web-bootstrap-sass-demo
 cd web-bootstrap-sass-demo
 npm install
 npm run build
