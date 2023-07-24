@@ -36,7 +36,10 @@ $success: #7952b3;
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins"; // Required
+@import "bootstrap/scss/utilities";
 
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
@@ -69,7 +72,9 @@ $success: #7952b3;
 @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/placeholders";
-@import "bootstrap/scss/utilities";
+
+// Helpers
+@import "bootstrap/scss/helpers";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
