@@ -4,6 +4,6 @@ build:
         - org.grails.asset-pipeline
 dependencies:
     - scope: build
-      coords: 'org.grails.plugins:asset-pipeline-gradle:4.3.0'
+      coords: 'org.grails.plugins:asset-pipeline-gradle:5.5.0-RC1'
     - scope: runtime
-      coords: "org.grails.plugins:asset-pipeline-grails:4.3.0"
+      coords: "org.grails.plugins:asset-pipeline-grails:5.5.0-RC1"
